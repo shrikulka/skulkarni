@@ -1,0 +1,22 @@
+package com.Hellowld;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@SpringBootApplication 
+public class Jinnah3HellowldApplication 
+{
+	public static void main(String[] args) {
+		SpringApplication.run(Jinnah3HellowldApplication.class, args);
+	}
+	@RestController  
+	public class controller {
+	    @GetMapping("/")  //handle HTTP GET request
+	    String return1(){
+	        return "Hello World";
+	    }
+	}
+}
